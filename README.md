@@ -72,9 +72,15 @@ Java 8以降で導入された、より簡潔で強力なコーディングス�
 
 ## 必要な環境
 
-- JDK 17以降
-- IDE（IntelliJ IDEA、VS Code、Eclipseなど）
-- 基本的なプログラミングの知識（変数、関数、条件分岐、ループなど）
+- **JDK 17以降**（推奨: JDK 21 LTS）
+- **IDE**: IntelliJ IDEA Community Edition、VS Code + Extension Pack for Java、またはEclipse
+- **基本的なプログラミングの知識**: 変数、関数、条件分岐、ループなど
+- **所要時間**: 1日2-3時間の学習で2-3週間程度
+
+!!! tip "推奨学習環境"
+    - OS: Windows 10/11、macOS 12以降、Ubuntu 20.04以降
+    - メモリ: 8GB以上（IDE使用時は16GB推奨）
+    - ディスク空き容量: 5GB以上
 
 ## ドキュメントサイトの閲覧
 
@@ -131,6 +137,37 @@ A: 個人差がありますが、1日2-3時間の学習で2-3週間程度が目�
 **Q: 練習問題はありますか？**
 A: 各セクションに実践例があり、Section 6で総合演習プロジェクトに取り組めます。
 
+## コントリビューション
+
+改善提案やバグ報告は、GitHubのIssueまたはPull Requestでお願いします。
+
+### 貢献方法
+
+1. このリポジトリをフォーク
+2. 新しいブランチを作成（`git checkout -b feature/improvement`）
+3. 変更をコミット（`git commit -am 'Add improvement'`）
+4. ブランチにプッシュ（`git push origin feature/improvement`）
+5. Pull Requestを作成
+
 ## ライセンス
 
 このプロジェクトは教育目的で作成されています。
+
+## 関連リソース
+
+### 公式ドキュメント
+- [Oracle Java Documentation](https://docs.oracle.com/en/java/)
+- [OpenJDK](https://openjdk.org/)
+
+### おすすめの書籍
+- 『Effective Java 第3版』Joshua Bloch著
+- 『Java言語で学ぶデザインパターン入門』結城浩著
+
+### オンラインリソース
+- [Baeldung](https://www.baeldung.com/) - Javaチュートリアル
+- [JetBrains Academy](https://www.jetbrains.com/academy/) - インタラクティブ学習
+- [Java Brains](https://javabrains.io/) - ビデオチュートリアル
+
+---
+
+**Happy Coding!** 🚀

@@ -385,6 +385,37 @@ public void setAge(int age) {
 }
 ```
 
+!!! tip "例外処理の設計指針"
+    - **ビジネスロジックのエラー**: カスタムチェック例外を使用
+    - **入力値の検証エラー**: `IllegalArgumentException`（非チェック）
+    - **状態エラー**: `IllegalStateException`（非チェック）
+    - **外部リソースのエラー**: チェック例外（`IOException`など）
+
+### 7. ログの活用
+
+例外発生時は適切にログを記録しましょう。
+
+```java
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
+public class UserService {
+    private static final Logger logger = Logger.getLogger(UserService.class.getName());
+
+    public void processUser(String userId) {
+        try {
+            // 処理
+        } catch (UserNotFoundException e) {
+            logger.log(Level.WARNING, "User not found: " + userId, e);
+            throw e;
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Unexpected error processing user: " + userId, e);
+            throw new RuntimeException("Failed to process user", e);
+        }
+    }
+}
+```
+
 ## 実践例: ファイル処理
 
 ```java

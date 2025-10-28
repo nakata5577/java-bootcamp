@@ -77,7 +77,7 @@ java -version
 ```
 
 出力例:
-```
+```text
 openjdk version "17.0.8" 2023-07-18
 OpenJDK Runtime Environment Temurin-17.0.8+7 (build 17.0.8+7)
 OpenJDK 64-Bit Server VM Temurin-17.0.8+7 (build 17.0.8+7, mixed mode, sharing)
@@ -88,9 +88,21 @@ javac -version
 ```
 
 出力例:
-```
+```text
 javac 17.0.8
 ```
+
+!!! tip "複数のJavaバージョンを管理したい場合"
+    **SDKMan!**（Linux/macOS）や**jEnv**を使用すると、複数のJavaバージョンを簡単に切り替えられます。
+    ```bash
+    # SDKMan!のインストール
+    curl -s "https://get.sdkman.io" | bash
+
+    # Javaのインストールと切り替え
+    sdk install java 17.0.8-tem
+    sdk install java 21.0.1-tem
+    sdk use java 17.0.8-tem
+    ```
 
 ## IDE（統合開発環境）のセットアップ
 

@@ -66,7 +66,7 @@ java HelloWorld
 
 #### 4. 出力
 
-```
+```text
 Hello, World!
 ```
 
@@ -125,7 +125,7 @@ java HelloArgs Java
 ```
 
 出力:
-```
+```text
 Hello, Java!
 ```
 
@@ -135,7 +135,7 @@ java HelloArgs
 ```
 
 出力:
-```
+```text
 Hello, World!
 ```
 
@@ -199,5 +199,9 @@ java HelloWorld.java   # コンパイル + 実行
 - `java` で `.class` ファイルを実行
 - すべてのプログラムは `main` メソッドから開始
 - ファイル名とクラス名は一致させる
+- Java 11以降では `java FileName.java` で直接実行可能
+
+!!! success "おめでとうございます！"
+    最初のJavaプログラムが動作しました。これでJavaプログラミングの第一歩を踏み出しました。
 
 次のセクションでは、プロジェクトの構造とパッケージの概念について学びます。

@@ -1884,6 +1884,18 @@ https://www.oracle.com/java/technologies/downloads/</p>
 <p>出力例:
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>javac 17.0.8
 </span></code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">複数のJavaバージョンを管理したい場合</p>
+<p><strong>SDKMan!</strong>（Linux/macOS）や<strong>jEnv</strong>を使用すると、複数のJavaバージョンを簡単に切り替えられます。
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># SDKMan!のインストール</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;https://get.sdkman.io&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Javaのインストールと切り替え</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>sdk<span class="w"> </span>install<span class="w"> </span>java<span class="w"> </span><span class="m">17</span>.0.8-tem
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>sdk<span class="w"> </span>install<span class="w"> </span>java<span class="w"> </span><span class="m">21</span>.0.1-tem
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>sdk<span class="w"> </span>use<span class="w"> </span>java<span class="w"> </span><span class="m">17</span>.0.8-tem
+</span></code></pre></div></p>
+</div>
 <h2 id="ide">IDE（統合開発環境）のセットアップ<a class="headerlink" href="#ide" title="Permanent link">&para;</a></h2>
 <h3 id="1-intellij-idea">1. IntelliJ IDEA（推奨）<a class="headerlink" href="#1-intellij-idea" title="Permanent link">&para;</a></h3>
 <p>JetBrains社が提供する高機能IDE。</p>

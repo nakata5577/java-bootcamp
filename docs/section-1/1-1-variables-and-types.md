@@ -139,10 +139,13 @@ float f = l;  // long → float（自動変換）
 ```
 
 **変換順序:**
-```
+```text
 byte → short → int → long → float → double
        char  →
 ```
+
+!!! note "なぜfloatはlongより大きい？"
+    floatは32bitですがlongは64bitです。しかし、floatは浮動小数点表現のため、より大きな数値範囲を扱えます。そのため、long → float の変換は暗黙的に可能です。ただし、精度は失われる可能性があります。
 
 ### 明示的な型変換（ナローイング）
 
@@ -265,18 +268,87 @@ var y = null;  // エラー: 型が推論できない
 
 ### 問題1: 温度変換プログラム
 摂氏から華氏に変換するプログラムを作成してください。
-- 公式: F = C × 9/5 + 32
-- `double`型を使用
+
+```java
+public class TemperatureConverter {
+    public static void main(String[] args) {
+        double celsius = 25.0;
+        // ここに変換処理を実装
+        // 公式: F = C × 9/5 + 32
+    }
+}
+```
+
+<details>
+<summary>解答例</summary>
+
+```java
+public class TemperatureConverter {
+    public static void main(String[] args) {
+        double celsius = 25.0;
+        double fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+        System.out.println(celsius + "°C = " + fahrenheit + "°F");
+        // 出力: 25.0°C = 77.0°F
+    }
+}
+```
+</details>
 
 ### 問題2: 円の面積と円周
 半径を入力として、円の面積と円周を計算するプログラムを作成してください。
-- 面積: π × r²
-- 円周: 2 × π × r
-- `Math.PI`を使用
+
+```java
+public class Circle {
+    public static void main(String[] args) {
+        double radius = 5.0;
+        // ここに計算処理を実装
+        // 面積: π × r²
+        // 円周: 2 × π × r
+    }
+}
+```
+
+<details>
+<summary>解答例</summary>
+
+```java
+public class Circle {
+    public static void main(String[] args) {
+        double radius = 5.0;
+        double area = Math.PI * radius * radius;
+        double circumference = 2 * Math.PI * radius;
+
+        System.out.println("半径: " + radius);
+        System.out.println("面積: " + area);
+        System.out.println("円周: " + circumference);
+    }
+}
+```
+</details>
 
 ### 問題3: 型変換
 `int`, `double`, `String`の相互変換を練習してください。
-- `"123"` → `int` → `double` → `String`
+
+<details>
+<summary>解答例</summary>
+
+```java
+public class TypeConversion {
+    public static void main(String[] args) {
+        // String → int → double → String
+        String str = "123";
+        int num = Integer.parseInt(str);
+        double d = (double) num;
+        String result = String.valueOf(d);
+
+        System.out.println("String: " + str);
+        System.out.println("int: " + num);
+        System.out.println("double: " + d);
+        System.out.println("String: " + result);
+    }
+}
+```
+</details>
 
 ## よくある落とし穴
 

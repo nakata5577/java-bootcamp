@@ -419,6 +419,17 @@ long count2 = IntStream.range(1, 1000000)
 
 **注意**: 並列化は常に高速化するわけではありません。小さなデータセットやシンプルな操作では、オーバーヘッドの方が大きい場合があります。
 
+!!! warning "並列Streamの注意点"
+    - **小規模データ**: 数百件以下では通常のStreamの方が速い
+    - **I/O操作**: ディスクやネットワークアクセスを含む場合は効果が薄い
+    - **スレッドセーフ**: 共有状態を変更する操作は避ける
+    - **順序依存**: 順序が重要な処理には不向き
+
+    **並列化が有効な場合:**
+    - データ量が大きい（数万件以上）
+    - 計算量の多い処理（数学演算、暗号化など）
+    - 独立した処理（副作用なし）
+
 ## 実践例: データ分析
 
 ```java
@@ -469,6 +480,54 @@ public class StreamExample {
 }
 ```
 
+## Stream APIのパフォーマンスTips
+
+### 1. 適切な中間操作の順序
+
+```java
+// 悪い例: filterの前にmap
+list.stream()
+    .map(expensiveOperation)  // すべての要素に適用
+    .filter(condition)
+    .collect(Collectors.toList());
+
+// 良い例: mapの前にfilter
+list.stream()
+    .filter(condition)  // 必要な要素だけ残す
+    .map(expensiveOperation)  // 減った要素にのみ適用
+    .collect(Collectors.toList());
+```
+
+### 2. 終端操作の選択
+
+```java
+// 存在確認だけなら findAny や anyMatch を使用
+// 悪い例
+boolean hasEven = list.stream()
+    .filter(n -> n % 2 == 0)
+    .collect(Collectors.toList())
+    .size() > 0;
+
+// 良い例
+boolean hasEven = list.stream()
+    .anyMatch(n -> n % 2 == 0);  // 最初の一致で終了
+```
+
+### 3. プリミティブStreamの活用
+
+```java
+// 悪い例: オートボクシングのオーバーヘッド
+int sum = list.stream()
+    .filter(n -> n % 2 == 0)
+    .reduce(0, Integer::sum);
+
+// 良い例: IntStreamを使用
+int sum = list.stream()
+    .filter(n -> n % 2 == 0)
+    .mapToInt(n -> n)
+    .sum();
+```
+
 ## まとめ
 
 ### Streamの作成
@@ -498,5 +557,9 @@ public class StreamExample {
 - 宣言的で読みやすいコード
 - 遅延評価による効率性
 - 並列処理の容易さ
+- 適切な操作順序でパフォーマンス向上
+
+!!! success "Stream APIをマスターしよう"
+    Stream APIはモダンJavaの核心機能です。最初は慣れないかもしれませんが、使い続けることで直感的に書けるようになります。
 
 次のセクションでは、Optionalについて学びます。

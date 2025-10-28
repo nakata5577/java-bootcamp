@@ -29,12 +29,18 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
     - content.code.annotate
     - content.action.edit
     - content.action.view
+    - content.tabs.link
 
 plugins:
   - search:
@@ -49,7 +55,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
@@ -57,11 +67,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.smartsymbols
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
   - tables
+  - abbr
   - toc:
       permalink: true
+      permalink_title: このセクションへのリンク
 
 nav:
   - ホーム: index.md
@@ -102,5 +121,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/nakata5577/java-bootcamp
+      name: GitHub Repository
+  generator: false
 
-copyright: Copyright &copy; 2025 Java Bootcamp
+copyright: Copyright &copy; 2025 Java Bootcamp. このプロジェクトは教育目的で作成されています。

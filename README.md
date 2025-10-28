@@ -72,15 +72,26 @@ Java 8以降で導入された、より簡潔で強力なコーディングス�
 
 ## 必要な環境
 
-- **JDK 17以降**（推奨: JDK 21 LTS）
-- **IDE**: IntelliJ IDEA Community Edition、VS Code + Extension Pack for Java、またはEclipse
-- **基本的なプログラミングの知識**: 変数、関数、条件分岐、ループなど
+### 開発環境
+
+- **JDK**: JDK 17以降（**推奨: JDK 21 LTS**）
+- **IDE**: 以下のいずれか
+    - IntelliJ IDEA Community Edition（推奨）
+    - VS Code + Extension Pack for Java
+    - Eclipse IDE for Java Developers
 - **所要時間**: 1日2-3時間の学習で2-3週間程度
 
+### 前提知識
+
+- 基本的なプログラミング概念（変数、関数、条件分岐、ループなど）
+- コマンドラインの基本操作
+- テキストエディタまたはIDEの使用経験
+
 !!! tip "推奨学習環境"
-    - OS: Windows 10/11、macOS 12以降、Ubuntu 20.04以降
-    - メモリ: 8GB以上（IDE使用時は16GB推奨）
-    - ディスク空き容量: 5GB以上
+    - **OS**: Windows 10/11、macOS 12以降、Ubuntu 20.04以降
+    - **メモリ**: 8GB以上（IDE使用時は16GB推奨）
+    - **ディスク空き容量**: 5GB以上
+    - **インターネット接続**: 依存関係のダウンロードに必要
 
 ## ドキュメントサイトの閲覧
 
@@ -156,17 +167,23 @@ A: 各セクションに実践例があり、Section 6で総合演習プロジ�
 ## 関連リソース
 
 ### 公式ドキュメント
+
 - [Oracle Java Documentation](https://docs.oracle.com/en/java/)
 - [OpenJDK](https://openjdk.org/)
+- [Java API Specification](https://docs.oracle.com/en/java/javase/21/docs/api/)
 
 ### おすすめの書籍
+
 - 『Effective Java 第3版』Joshua Bloch著
 - 『Java言語で学ぶデザインパターン入門』結城浩著
+- 『スッキリわかるJava入門』中山清喬著
 
 ### オンラインリソース
+
 - [Baeldung](https://www.baeldung.com/) - Javaチュートリアル
 - [JetBrains Academy](https://www.jetbrains.com/academy/) - インタラクティブ学習
 - [Java Brains](https://javabrains.io/) - ビデオチュートリアル
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/java) - Q&Aコミュニティ
 
 ---
 

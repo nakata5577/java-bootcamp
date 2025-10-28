@@ -247,10 +247,54 @@ try {
 } finally {
     if (conn != null) {
         try {
+            // 重要: autoCommitを必ず元に戻す
+            // 接続プールを使用する場合、この設定が次の使用者に影響する
             conn.setAutoCommit(true);
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+}
+```
+
+**トランザクションのベストプラクティス:**
+- **必ずsetAutoCommit(true)を復元**: 接続プールを使用する場合、設定が残ると次の使用者に影響
+- **try-with-resourcesの制限**: setAutoCommit()を呼ぶ必要があるため、通常のtry-finallyを使用
+- **適切なスコープ**: トランザクションは必要最小限の範囲に留める
+- **タイムアウト設定**: 長時間のトランザクションはタイムアウトを設定
+
+```java
+// より堅牢なトランザクション処理
+public void transferMoney(int fromId, int toId, double amount) throws SQLException {
+    Connection conn = null;
+    try {
+        conn = getConnection();
+        conn.setAutoCommit(false);
+
+        // ビジネスロジック
+        withdrawFromAccount(conn, fromId, amount);
+        depositToAccount(conn, toId, amount);
+
+        conn.commit();
+    } catch (SQLException e) {
+        if (conn != null) {
+            try {
+                conn.rollback();
+            } catch (SQLException rollbackEx) {
+                // ロールバック失敗もログに記録
+                rollbackEx.printStackTrace();
+            }
+        }
+        throw e;  // 呼び出し元にも例外を伝播
+    } finally {
+        if (conn != null) {
+            try {
+                conn.setAutoCommit(true);  // 必須
+                conn.close();
+            } catch (SQLException closeEx) {
+                closeEx.printStackTrace();
+            }
         }
     }
 }

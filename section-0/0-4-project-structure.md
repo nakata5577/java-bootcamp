@@ -181,15 +181,24 @@ Math.sqrt(16);
 プロジェクトルートから:
 
 ```bash
-# コンパイル（すべてのJavaファイル）
+# 方法1: すべてのJavaファイルを指定
 javac -d bin src/com/example/myapp/*.java src/com/example/myapp/model/*.java src/com/example/myapp/util/*.java
 
-# または
-javac -d bin src/com/example/myapp/**/*.java  # シェルがサポートしている場合
+# 方法2: findコマンドを使用（推奨）
+find src -name "*.java" | xargs javac -d bin
+
+# 方法3: シェルの機能を使用（bash 4.0以降）
+javac -d bin src/**/*.java
 ```
 
+**オプションの説明:**
 - `-d bin`: コンパイル後のクラスファイルを`bin`ディレクトリに出力
 - `src/com/example/myapp/**/*.java`: すべてのJavaファイルを指定
+
+**binディレクトリの作成:**
+```bash
+mkdir -p bin  # 事前にディレクトリを作成
+```
 
 ### 実行
 

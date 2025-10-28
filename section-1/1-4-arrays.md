@@ -288,12 +288,14 @@ Arrays.fill(numbers, 1, 3, 20);  // インデックス1から2までを20で埋�
 ### 配列の文字列表現
 
 ```java
+{% raw %}
 int[] numbers = {1, 2, 3, 4, 5};
 System.out.println(Arrays.toString(numbers));  // [1, 2, 3, 4, 5]
 
 // 多次元配列
 int[][] matrix = {{1, 2}, {3, 4}};
 System.out.println(Arrays.deepToString(matrix));  // [[1, 2], [3, 4]]
+{% endraw %}
 ```
 
 ## 配列 vs コレクション

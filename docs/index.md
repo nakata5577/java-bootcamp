@@ -2,9 +2,19 @@
 
 Javaを短期間で集中して学ぶための教科書プロジェクトです。
 
+!!! info "ドキュメントサイトについて"
+    このドキュメントは[MkDocs Material](https://squidfunk.github.io/mkdocs-material/)で構築され、GitHub Pagesで公開されています。
+
+    **🔗 オンラインで閲覧**: [https://nakata5577.github.io/java-bootcamp/](https://nakata5577.github.io/java-bootcamp/)
+
 ## 対象者
 
 プログラミング経験者を対象としています。基本的な文法は簡潔にまとめつつ、オブジェクト指向の概念や実践的な開発スキルに重点を置いた構成になっています。
+
+**前提知識:**
+- 基本的なプログラミング概念（変数、関数、条件分岐、ループなど）
+- コマンドラインの基本操作
+- テキストエディタまたはIDEの使用経験
 
 ## 目次
 
@@ -72,9 +82,20 @@ Java 8以降で導入された、より簡潔で強力なコーディングス�
 
 ## 必要な環境
 
-- JDK 17以降
-- IDE（IntelliJ IDEA、VS Code、Eclipseなど）
-- 基本的なプログラミングの知識（変数、関数、条件分岐、ループなど）
+### 開発環境
+
+- **JDK**: JDK 17以降（**推奨: JDK 21 LTS**）
+- **IDE**: 以下のいずれか
+    - IntelliJ IDEA Community Edition（推奨）
+    - VS Code + Extension Pack for Java
+    - Eclipse IDE for Java Developers
+- **所要時間**: 1日2-3時間の学習で2-3週間程度
+
+!!! tip "推奨学習環境"
+    - **OS**: Windows 10/11、macOS 12以降、Ubuntu 20.04以降
+    - **メモリ**: 8GB以上（IDE使用時は16GB推奨）
+    - **ディスク空き容量**: 5GB以上
+    - **インターネット接続**: 依存関係のダウンロードに必要
 
 ## 学習のヒント
 
@@ -114,6 +135,61 @@ A: 各セクションに実践例があり、Section 6で総合演習プロジ�
 
 - **GitHub Issues**: バグ報告や機能提案
 - **GitHub Discussions**: 学習に関する質問や議論
+- **GitHub Repository**: [nakata5577/java-bootcamp](https://github.com/nakata5577/java-bootcamp)
+
+## ドキュメントサイトの開発
+
+このドキュメントサイトは[MkDocs](https://www.mkdocs.org/)と[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)を使用しています。
+
+### ローカルでのプレビュー
+
+```bash
+# 依存関係のインストール
+pip install -r requirements.txt
+
+# 開発サーバーを起動（http://127.0.0.1:8000）
+mkdocs serve
+
+# 静的サイトのビルド
+mkdocs build
+```
+
+### GitHub Pagesへのデプロイ
+
+mainブランチへのプッシュ時に、GitHub Actionsによって自動的にビルド＆デプロイされます。
+
+## コントリビューション
+
+改善提案やバグ報告を歓迎します。
+
+### 貢献方法
+
+1. このリポジトリをフォーク
+2. 新しいブランチを作成（`git checkout -b feature/improvement`）
+3. 変更をコミット（`git commit -am 'Add improvement'`）
+4. ブランチにプッシュ（`git push origin feature/improvement`）
+5. Pull Requestを作成
+
+## 関連リソース
+
+### 公式ドキュメント
+
+- [Oracle Java Documentation](https://docs.oracle.com/en/java/)
+- [OpenJDK](https://openjdk.org/)
+- [Java API Specification](https://docs.oracle.com/en/java/javase/21/docs/api/)
+
+### おすすめの書籍
+
+- 『Effective Java 第3版』Joshua Bloch著
+- 『Java言語で学ぶデザインパターン入門』結城浩著
+- 『スッキリわかるJava入門』中山清喬著
+
+### オンラインリソース
+
+- [Baeldung](https://www.baeldung.com/) - Javaチュートリアル
+- [JetBrains Academy](https://www.jetbrains.com/academy/) - インタラクティブ学習
+- [Java Brains](https://javabrains.io/) - ビデオチュートリアル
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/java) - Q&Aコミュニティ
 
 ## ライセンス
 

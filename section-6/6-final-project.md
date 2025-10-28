@@ -404,6 +404,65 @@ task-manager/
 
 ---
 
+## 開発のヒント
+
+### デバッグのコツ
+
+1. **段階的な実装**: 一度にすべてを作ろうとせず、小さな機能から始める
+2. **こまめなテスト**: 機能を追加するたびに動作確認
+3. **ログ出力**: `System.out.println()` で変数の値を確認
+4. **エラーメッセージを読む**: スタックトレースには有用な情報が含まれている
+
+### コードの品質を高めるために
+
+1. **命名規則**:
+   - クラス: `PascalCase`（例: `TaskService`）
+   - メソッド/変数: `camelCase`（例: `addTask`）
+   - 定数: `UPPER_SNAKE_CASE`（例: `MAX_TASKS`）
+
+2. **DRY原則** (Don't Repeat Yourself):
+   - 同じコードを繰り返さない
+   - 共通処理はメソッドに抽出
+
+3. **SOLID原則**:
+   - 単一責任の原則: 1つのクラスは1つの責任のみ
+   - 依存性の逆転: 抽象に依存し、具象に依存しない
+
+### よくある問題と解決策
+
+1. **`Scanner`のバグ**:
+   ```java
+   // 問題
+   int choice = scanner.nextInt();
+   String input = scanner.nextLine();  // 空行が読み込まれる
+
+   // 解決策
+   int choice = scanner.nextInt();
+   scanner.nextLine();  // 改行を消費
+   String input = scanner.nextLine();
+   ```
+
+2. **ファイルが見つからない**:
+   - 相対パスと絶対パスを確認
+   - ファイルの存在チェックを追加
+   ```java
+   File file = new File("data.txt");
+   if (!file.exists()) {
+       file.createNewFile();
+   }
+   ```
+
+3. **NullPointerException**:
+   - Optionalを使用
+   - nullチェックを忘れない
+   ```java
+   if (task != null) {
+       task.execute();
+   }
+   // または
+   Optional.ofNullable(task).ifPresent(Task::execute);
+   ```
+
 ## まとめ
 
 この総合演習では、これまで学んだ以下の知識を実践します：
@@ -415,6 +474,12 @@ task-manager/
 - **Section 5**: ビルドツール、ユニットテスト、JDBC
 
 実際に手を動かして、完成したアプリケーションを作り上げることで、Javaの実践的なスキルを身につけることができます。
+
+### 完成の目安
+
+- **初級**: 基本機能が動作し、データがメモリ上で管理できる（1-2日）
+- **中級**: ファイルI/Oでデータを永続化、検索機能を実装（3-5日）
+- **上級**: ユニットテスト、エラーハンドリング、ビルドツール使用（1-2週間）
 
 ## 次のステップ
 

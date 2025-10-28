@@ -78,23 +78,33 @@ Java 8以降で導入された、より簡潔で強力なコーディングス�
 
 ## ドキュメントサイトの閲覧
 
-このプロジェクトは[MkDocs](https://www.mkdocs.org/)と[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)を使用して、美しいドキュメントサイトとして表示できます。
+このプロジェクトは[MkDocs](https://www.mkdocs.org/)と[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)を使用して、美しいドキュメントサイトとして公開されています。
 
-### セットアップ
+### オンラインで閲覧
+
+ドキュメントサイトはGitHub Pagesで自動公開されています：
+
+**🔗 https://nakata5577.github.io/java-bootcamp/**
+
+mainブランチへのプッシュ時に自動的にビルド＆デプロイされます。
+
+### ローカルでの開発
+
+#### セットアップ
 
 ```bash
 # 依存関係のインストール
 pip install -r requirements.txt
 ```
 
-### ローカルでのプレビュー
+#### ローカルプレビュー
 
 ```bash
 # 開発サーバーを起動（http://127.0.0.1:8000 で閲覧可能）
 mkdocs serve
 ```
 
-### 静的サイトのビルド
+#### 静的サイトのビルド
 
 ```bash
 # site/ ディレクトリに静的ファイルを生成

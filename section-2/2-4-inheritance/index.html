@@ -169,6 +169,11 @@
       </label>
       <nav class="md-search__options" aria-label="検索">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -250,6 +255,8 @@
           
   
   
+    
+  
   Section 0 - イントロダクション
 
         </a>
@@ -269,6 +276,8 @@
         <a href="../../section-1/1-1-variables-and-types/" class="md-tabs__link">
           
   
+  
+    
   
   Section 1 - Javaの基本
 
@@ -292,6 +301,8 @@
           
   
   
+    
+  
   Section 2 - オブジェクト指向プログラミング
 
         </a>
@@ -311,6 +322,8 @@
         <a href="../../section-3/3-1-exception-handling/" class="md-tabs__link">
           
   
+  
+    
   
   Section 3 - Javaの重要機能
 
@@ -332,6 +345,8 @@
           
   
   
+    
+  
   Section 4 - モダンJava
 
         </a>
@@ -352,6 +367,8 @@
           
   
   
+    
+  
   Section 5 - 実践開発への一歩
 
         </a>
@@ -371,6 +388,8 @@
         <a href="../../section-6/6-final-project/" class="md-tabs__link">
           
   
+  
+    
   
   Section 6 - 総合演習
 
@@ -454,6 +473,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -596,6 +625,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -740,6 +779,20 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1259,6 +1312,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1401,6 +1464,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1520,6 +1591,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1638,6 +1717,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -2047,23 +2130,23 @@
   
 
 
-<h1 id="2-4">2-4. 継承<a class="headerlink" href="#2-4" title="Permanent link">&para;</a></h1>
+<h1 id="2-4">2-4. 継承<a class="headerlink" href="#2-4" title="このセクションへのリンク">&para;</a></h1>
 <p>継承（Inheritance）は、既存のクラスの機能を再利用し、拡張する仕組みです。</p>
-<h2 id="_1">継承とは<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">継承とは<a class="headerlink" href="#_1" title="このセクションへのリンク">&para;</a></h2>
 <p><strong>継承</strong>は、既存のクラス（スーパークラス/親クラス）の機能を引き継いで、新しいクラス（サブクラス/子クラス）を作成する機能です。</p>
-<h3 id="_2">メリット<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="_2">メリット<a class="headerlink" href="#_2" title="このセクションへのリンク">&para;</a></h3>
 <ol>
 <li><strong>コードの再利用</strong>: 共通機能を1箇所にまとめる</li>
 <li><strong>保守性の向上</strong>: 変更箇所を減らせる</li>
 <li><strong>拡張性</strong>: 既存コードを変更せずに機能追加</li>
 </ol>
-<h3 id="_3">構文<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">構文<a class="headerlink" href="#_3" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SubClass</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SuperClass</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// サブクラスの内容</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_4">基本的な継承<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="animaldog">例: AnimalとDog<a class="headerlink" href="#animaldog" title="Permanent link">&para;</a></h3>
+<h2 id="_4">基本的な継承<a class="headerlink" href="#_4" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="animaldog">例: AnimalとDog<a class="headerlink" href="#animaldog" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// スーパークラス</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
@@ -2116,9 +2199,9 @@
 </span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="super">super キーワード<a class="headerlink" href="#super" title="Permanent link">&para;</a></h2>
+<h2 id="super">super キーワード<a class="headerlink" href="#super" title="このセクションへのリンク">&para;</a></h2>
 <p><code>super</code> は、スーパークラスのメンバーにアクセスするために使用します。</p>
-<h3 id="_5">スーパークラスのコンストラクタ呼び出し<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_5">スーパークラスのコンストラクタ呼び出し<a class="headerlink" href="#_5" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
@@ -2137,7 +2220,7 @@
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>注意</strong>: <code>super()</code> はコンストラクタの最初の行でなければなりません。</p>
-<h3 id="_6">スーパークラスのメソッド呼び出し<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">スーパークラスのメソッド呼び出し<a class="headerlink" href="#_6" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Some sound&quot;</span><span class="p">);</span>
@@ -2159,7 +2242,7 @@
 </span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1">// Some sound</span>
 </span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c1">// Woof!</span>
 </span></code></pre></div>
-<h2 id="protected">protected修飾子<a class="headerlink" href="#protected" title="Permanent link">&para;</a></h2>
+<h2 id="protected">protected修飾子<a class="headerlink" href="#protected" title="このセクションへのリンク">&para;</a></h2>
 <p><code>protected</code> は、同じパッケージまたはサブクラスからアクセス可能です。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">  </span><span class="c1">// サブクラスからアクセス可能</span>
@@ -2179,9 +2262,9 @@
 </span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_7">メソッドのオーバーライド<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_7">メソッドのオーバーライド<a class="headerlink" href="#_7" title="このセクションへのリンク">&para;</a></h2>
 <p>サブクラスでスーパークラスのメソッドを再定義することを<strong>オーバーライド</strong>と言います。</p>
-<h3 id="_8">基本形<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_8">基本形<a class="headerlink" href="#_8" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Some generic sound&quot;</span><span class="p">);</span>
@@ -2209,7 +2292,7 @@
 </span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">animal1</span><span class="p">.</span><span class="na">makeSound</span><span class="p">();</span><span class="w">  </span><span class="c1">// Woof! Woof!</span>
 </span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="n">animal2</span><span class="p">.</span><span class="na">makeSound</span><span class="p">();</span><span class="w">  </span><span class="c1">// Meow!</span>
 </span></code></pre></div>
-<h3 id="override">@Override アノテーション<a class="headerlink" href="#override" title="Permanent link">&para;</a></h3>
+<h3 id="override">@Override アノテーション<a class="headerlink" href="#override" title="このセクションへのリンク">&para;</a></h3>
 <p><code>@Override</code> アノテーションは、メソッドが正しくオーバーライドされているかをコンパイラがチェックします。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -2225,7 +2308,7 @@
 </span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="c1">// コンパイルエラー: makeSondというメソッドはスーパークラスに存在しない</span>
 </span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="_9">オーバーライドの制約<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">オーバーライドの制約<a class="headerlink" href="#_9" title="このセクションへのリンク">&para;</a></h3>
 <ol>
 <li><strong>メソッドシグネチャ</strong>: 名前、パラメータの型と数が同じでなければならない</li>
 <li><strong>アクセス修飾子</strong>: 制限を強くできない（public → protected は不可）</li>
@@ -2249,8 +2332,8 @@
 </span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="final">final キーワード<a class="headerlink" href="#final" title="Permanent link">&para;</a></h2>
-<h3 id="final_1">finalクラス<a class="headerlink" href="#final_1" title="Permanent link">&para;</a></h3>
+<h2 id="final">final キーワード<a class="headerlink" href="#final" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="final_1">finalクラス<a class="headerlink" href="#final_1" title="このセクションへのリンク">&para;</a></h3>
 <p>継承を禁止します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">String</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="c1">// Stringクラスは継承不可</span>
@@ -2258,7 +2341,7 @@
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1">// public class MyString extends String { }  // エラー</span>
 </span></code></pre></div>
-<h3 id="final_2">finalメソッド<a class="headerlink" href="#final_2" title="Permanent link">&para;</a></h3>
+<h3 id="final_2">finalメソッド<a class="headerlink" href="#final_2" title="このセクションへのリンク">&para;</a></h3>
 <p>オーバーライドを禁止します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">breathe</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -2272,13 +2355,13 @@
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="c1">// public void breathe() { }</span>
 </span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="final_3">final変数<a class="headerlink" href="#final_3" title="Permanent link">&para;</a></h3>
+<h3 id="final_3">final変数<a class="headerlink" href="#final_3" title="このセクションへのリンク">&para;</a></h3>
 <p>値の変更を禁止します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Constants</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14159</span><span class="p">;</span><span class="w">  </span><span class="c1">// 定数</span>
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_10">継承の階層<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="_10">継承の階層<a class="headerlink" href="#_10" title="このセクションへのリンク">&para;</a></h2>
 <p>複数レベルの継承が可能です。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -2304,7 +2387,7 @@
 </span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="n">dog</span><span class="p">.</span><span class="na">breathe</span><span class="p">();</span><span class="w"> </span><span class="c1">// Mammalから継承</span>
 </span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="n">dog</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w">    </span><span class="c1">// Dog独自</span>
 </span></code></pre></div>
-<h2 id="object">Objectクラス<a class="headerlink" href="#object" title="Permanent link">&para;</a></h2>
+<h2 id="object">Objectクラス<a class="headerlink" href="#object" title="このセクションへのリンク">&para;</a></h2>
 <p>すべてのクラスは、明示的に継承を指定しなくても <code>Object</code> クラスを継承します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="c1">// 暗黙的に extends Object</span>
@@ -2314,7 +2397,7 @@
 </span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyClass</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="object_1">Objectクラスの主なメソッド<a class="headerlink" href="#object_1" title="Permanent link">&para;</a></h3>
+<h3 id="object_1">Objectクラスの主なメソッド<a class="headerlink" href="#object_1" title="このセクションへのリンク">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -2341,7 +2424,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="tostring">toStringのオーバーライド<a class="headerlink" href="#tostring" title="Permanent link">&para;</a></h3>
+<h3 id="tostring">toStringのオーバーライド<a class="headerlink" href="#tostring" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
@@ -2361,7 +2444,7 @@
 </span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">);</span>
 </span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person</span><span class="p">);</span><span class="w">  </span><span class="c1">// Person{name=&#39;Alice&#39;, age=25}</span>
 </span></code></pre></div>
-<h3 id="equalshashcode">equalsとhashCodeのオーバーライド<a class="headerlink" href="#equalshashcode" title="Permanent link">&para;</a></h3>
+<h3 id="equalshashcode">equalsとhashCodeのオーバーライド<a class="headerlink" href="#equalshashcode" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Objects</span><span class="p">;</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
@@ -2393,14 +2476,14 @@
 </span><span id="__span-14-29"><a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>
 </span><span id="__span-14-30"><a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">p2</span><span class="p">));</span><span class="w">  </span><span class="c1">// true（内容が同じ）</span>
 </span></code></pre></div>
-<h2 id="vs">継承 vs コンポジション<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h2>
-<h3 id="_11">継承の問題点<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h2 id="vs">継承 vs コンポジション<a class="headerlink" href="#vs" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="_11">継承の問題点<a class="headerlink" href="#_11" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><strong>強い結合</strong>: スーパークラスの変更がサブクラスに影響</li>
 <li><strong>単一継承</strong>: Javaは多重継承不可</li>
 <li><strong>不適切な継承</strong>: "is-a" 関係でない場合に問題</li>
 </ul>
-<h3 id="_12">コンポジション（委譲）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h3 id="_12">コンポジション（委譲）<a class="headerlink" href="#_12" title="このセクションへのリンク">&para;</a></h3>
 <p>オブジェクトを内部に持つことで機能を利用します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">// 継承（is-a関係）</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Car</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Engine</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// Carはエンジンではない（不適切）</span>
@@ -2420,7 +2503,7 @@
 </span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>原則</strong>: "is-a" 関係の場合は継承、"has-a" 関係の場合はコンポジション</p>
-<h2 id="_13">実践例: 図形の階層<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h2 id="_13">実践例: 図形の階層<a class="headerlink" href="#_13" title="このセクションへのリンク">&para;</a></h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// スーパークラス</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Shape</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">color</span><span class="p">;</span>
@@ -2485,7 +2568,7 @@
 </span><span id="__span-16-62"><a id="__codelineno-16-62" name="__codelineno-16-62" href="#__codelineno-16-62"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-16-63"><a id="__codelineno-16-63" name="__codelineno-16-63" href="#__codelineno-16-63"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_14">まとめ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h2 id="_14">まとめ<a class="headerlink" href="#_14" title="このセクションへのリンク">&para;</a></h2>
 <ul>
 <li><strong>継承</strong>: <code>extends</code> でスーパークラスの機能を引き継ぐ</li>
 <li><strong>super</strong>: スーパークラスのメンバーにアクセス</li>
@@ -2513,6 +2596,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2571,14 +2656,9 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Java Bootcamp
+      Copyright &copy; 2025 Java Bootcamp. このプロジェクトは教育目的で作成されています。
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -2589,10 +2669,7 @@
     
     
     
-      
-      
-    
-    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -2607,10 +2684,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

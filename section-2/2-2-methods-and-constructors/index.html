@@ -169,6 +169,11 @@
       </label>
       <nav class="md-search__options" aria-label="検索">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -250,6 +255,8 @@
           
   
   
+    
+  
   Section 0 - イントロダクション
 
         </a>
@@ -269,6 +276,8 @@
         <a href="../../section-1/1-1-variables-and-types/" class="md-tabs__link">
           
   
+  
+    
   
   Section 1 - Javaの基本
 
@@ -292,6 +301,8 @@
           
   
   
+    
+  
   Section 2 - オブジェクト指向プログラミング
 
         </a>
@@ -311,6 +322,8 @@
         <a href="../../section-3/3-1-exception-handling/" class="md-tabs__link">
           
   
+  
+    
   
   Section 3 - Javaの重要機能
 
@@ -332,6 +345,8 @@
           
   
   
+    
+  
   Section 4 - モダンJava
 
         </a>
@@ -352,6 +367,8 @@
           
   
   
+    
+  
   Section 5 - 実践開発への一歩
 
         </a>
@@ -371,6 +388,8 @@
         <a href="../../section-6/6-final-project/" class="md-tabs__link">
           
   
+  
+    
   
   Section 6 - 総合演習
 
@@ -454,6 +473,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -596,6 +625,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -740,6 +779,20 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1193,6 +1246,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1335,6 +1398,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1454,6 +1525,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1572,6 +1651,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -1915,16 +1998,16 @@
   
 
 
-<h1 id="2-2">2-2. メソッドとコンストラクタ<a class="headerlink" href="#2-2" title="Permanent link">&para;</a></h1>
+<h1 id="2-2">2-2. メソッドとコンストラクタ<a class="headerlink" href="#2-2" title="このセクションへのリンク">&para;</a></h1>
 <p>メソッドとコンストラクタは、クラスの動作を定義し、オブジェクトを初期化するための重要な要素です。</p>
-<h2 id="_1">メソッドの詳細<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">メソッドの構造<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="_1">メソッドの詳細<a class="headerlink" href="#_1" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="_2">メソッドの構造<a class="headerlink" href="#_2" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">アクセス修飾子</span><span class="w"> </span><span class="n">戻り値の型</span><span class="w"> </span><span class="nf">メソッド名</span><span class="p">(</span><span class="n">パラメータリスト</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// メソッド本体</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">戻り値</span><span class="p">;</span><span class="w">  </span><span class="c1">// 戻り値の型がvoid以外の場合</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="_3">例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">例<a class="headerlink" href="#_3" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Calculator</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// 戻り値あり、パラメータあり</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1942,8 +2025,8 @@
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_4">パラメータと引数<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="pass-by-value">値渡し（Pass by Value）<a class="headerlink" href="#pass-by-value" title="Permanent link">&para;</a></h3>
+<h2 id="_4">パラメータと引数<a class="headerlink" href="#_4" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="pass-by-value">値渡し（Pass by Value）<a class="headerlink" href="#pass-by-value" title="このセクションへのリンク">&para;</a></h3>
 <p>Javaはすべて<strong>値渡し</strong>です。</p>
 <p><strong>プリミティブ型の場合:</strong></p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Example</span><span class="w"> </span><span class="p">{</span>
@@ -1982,7 +2065,7 @@
 </span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>ポイント</strong>: 参照のコピーが渡されるため、オブジェクトの内容は変更できますが、参照自体は変更できません。</p>
-<h3 id="varargs">可変長引数（Varargs）<a class="headerlink" href="#varargs" title="Permanent link">&para;</a></h3>
+<h3 id="varargs">可変長引数（Varargs）<a class="headerlink" href="#varargs" title="このセクションへのリンク">&para;</a></h3>
 <p>メソッドに任意の個数の引数を渡せます。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MathUtil</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="c1">// 可変長引数</span>
@@ -2009,7 +2092,7 @@
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">method</span><span class="p">(</span><span class="kt">int</span><span class="p">...</span><span class="w"> </span><span class="n">numbers</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">method</span><span class="p">(</span><span class="kt">int</span><span class="p">...</span><span class="w"> </span><span class="n">numbers1</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">...</span><span class="w"> </span><span class="n">numbers2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_5">メソッドのオーバーロード<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_5">メソッドのオーバーロード<a class="headerlink" href="#_5" title="このセクションへのリンク">&para;</a></h2>
 <p>同じ名前で異なるパラメータを持つメソッドを複数定義できます。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Printer</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="c1">// パラメータの型が異なる</span>
@@ -2047,15 +2130,15 @@
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getValue</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getValue</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">1.0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">  </span><span class="c1">// コンパイルエラー</span>
 </span></code></pre></div>
-<h2 id="_6">コンストラクタ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_6">コンストラクタ<a class="headerlink" href="#_6" title="このセクションへのリンク">&para;</a></h2>
 <p>コンストラクタは、オブジェクトの初期化を行う特別なメソッドです。</p>
-<h3 id="_7">コンストラクタの特徴<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_7">コンストラクタの特徴<a class="headerlink" href="#_7" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li>クラス名と同じ名前</li>
 <li>戻り値の型を指定しない（<code>void</code> も不要）</li>
 <li><code>new</code> キーワードでオブジェクト生成時に自動的に呼ばれる</li>
 </ul>
-<h3 id="_8">デフォルトコンストラクタ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_8">デフォルトコンストラクタ<a class="headerlink" href="#_8" title="このセクションへのリンク">&para;</a></h3>
 <p>コンストラクタを定義しない場合、コンパイラが自動的にデフォルトコンストラクタを生成します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
@@ -2065,7 +2148,7 @@
 </span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1">// デフォルトコンストラクタが自動生成される</span>
 </span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span>
 </span></code></pre></div>
-<h3 id="_9">カスタムコンストラクタ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">カスタムコンストラクタ<a class="headerlink" href="#_9" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
@@ -2093,7 +2176,7 @@
 </span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1">// Person person = new Person();  // エラー: 引数なしのコンストラクタが存在しない</span>
 </span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// OK</span>
 </span></code></pre></div>
-<h3 id="_10">コンストラクタのオーバーロード<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h3 id="_10">コンストラクタのオーバーロード<a class="headerlink" href="#_10" title="このセクションへのリンク">&para;</a></h3>
 <p>複数のコンストラクタを定義できます。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
@@ -2132,7 +2215,7 @@
 </span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a><span class="n">Person</span><span class="w"> </span><span class="n">p3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 </span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="n">Person</span><span class="w"> </span><span class="n">p4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Charlie&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;charlie@example.com&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<h3 id="this">コンストラクタチェーン（this()）<a class="headerlink" href="#this" title="Permanent link">&para;</a></h3>
+<h3 id="this">コンストラクタチェーン（this()）<a class="headerlink" href="#this" title="このセクションへのリンク">&para;</a></h3>
 <p>他のコンストラクタを呼び出すことで、重複を避けられます。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
@@ -2163,8 +2246,8 @@
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="k">this</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span><span class="w">  </span><span class="c1">// エラー: this()は最初の行でなければならない</span>
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_11">初期化ブロック<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<h3 id="_12">インスタンス初期化ブロック<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h2 id="_11">初期化ブロック<a class="headerlink" href="#_11" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="_12">インスタンス初期化ブロック<a class="headerlink" href="#_12" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
@@ -2180,7 +2263,7 @@
 </span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="static">static初期化ブロック<a class="headerlink" href="#static" title="Permanent link">&para;</a></h3>
+<h3 id="static">static初期化ブロック<a class="headerlink" href="#static" title="このセクションへのリンク">&para;</a></h3>
 <p>クラスがロードされる際に1度だけ実行されます。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Config</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">dbUrl</span><span class="p">;</span>
@@ -2194,7 +2277,7 @@
 </span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="_13">初期化の順序<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h3 id="_13">初期化の順序<a class="headerlink" href="#_13" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">staticVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initStaticVar</span><span class="p">();</span>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">instanceVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initInstanceVar</span><span class="p">();</span>
@@ -2235,7 +2318,7 @@
 </span><span id="__span-16-38"><a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a><span class="c1">// 5. Instance block</span>
 </span><span id="__span-16-39"><a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a><span class="c1">// 6. Constructor</span>
 </span></code></pre></div>
-<h2 id="rectangle">実践例: Rectangleクラス<a class="headerlink" href="#rectangle" title="Permanent link">&para;</a></h2>
+<h2 id="rectangle">実践例: Rectangleクラス<a class="headerlink" href="#rectangle" title="このセクションへのリンク">&para;</a></h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Rectangle</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
 </span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
@@ -2290,15 +2373,15 @@
 </span><span id="__span-17-52"><a id="__codelineno-17-52" name="__codelineno-17-52" href="#__codelineno-17-52"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-17-53"><a id="__codelineno-17-53" name="__codelineno-17-53" href="#__codelineno-17-53"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_14">まとめ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
-<h3 id="_15">メソッド<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h2 id="_14">まとめ<a class="headerlink" href="#_14" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="_15">メソッド<a class="headerlink" href="#_15" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><strong>構造</strong>: アクセス修飾子、戻り値の型、メソッド名、パラメータ</li>
 <li><strong>値渡し</strong>: すべて値渡し（参照型は参照のコピーが渡される）</li>
 <li><strong>可変長引数</strong>: <code>int... numbers</code> で任意個数の引数</li>
 <li><strong>オーバーロード</strong>: 同じ名前で異なるパラメータ</li>
 </ul>
-<h3 id="_16">コンストラクタ<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h3 id="_16">コンストラクタ<a class="headerlink" href="#_16" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><strong>目的</strong>: オブジェクトの初期化</li>
 <li><strong>特徴</strong>: クラス名と同じ、戻り値なし</li>
@@ -2324,6 +2407,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2382,14 +2467,9 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Java Bootcamp
+      Copyright &copy; 2025 Java Bootcamp. このプロジェクトは教育目的で作成されています。
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -2400,10 +2480,7 @@
     
     
     
-      
-      
-    
-    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -2418,10 +2495,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

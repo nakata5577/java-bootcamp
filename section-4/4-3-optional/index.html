@@ -169,6 +169,11 @@
       </label>
       <nav class="md-search__options" aria-label="検索">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -250,6 +255,8 @@
           
   
   
+    
+  
   Section 0 - イントロダクション
 
         </a>
@@ -269,6 +276,8 @@
         <a href="../../section-1/1-1-variables-and-types/" class="md-tabs__link">
           
   
+  
+    
   
   Section 1 - Javaの基本
 
@@ -290,6 +299,8 @@
           
   
   
+    
+  
   Section 2 - オブジェクト指向プログラミング
 
         </a>
@@ -309,6 +320,8 @@
         <a href="../../section-3/3-1-exception-handling/" class="md-tabs__link">
           
   
+  
+    
   
   Section 3 - Javaの重要機能
 
@@ -332,6 +345,8 @@
           
   
   
+    
+  
   Section 4 - モダンJava
 
         </a>
@@ -352,6 +367,8 @@
           
   
   
+    
+  
   Section 5 - 実践開発への一歩
 
         </a>
@@ -371,6 +388,8 @@
         <a href="../../section-6/6-final-project/" class="md-tabs__link">
           
   
+  
+    
   
   Section 6 - 総合演習
 
@@ -454,6 +473,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -597,6 +626,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -738,6 +777,20 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -927,6 +980,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1070,6 +1133,14 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1592,6 +1663,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1710,6 +1789,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -2191,11 +2274,11 @@
   
 
 
-<h1 id="4-3-optional">4-3. Optional<a class="headerlink" href="#4-3-optional" title="Permanent link">&para;</a></h1>
+<h1 id="4-3-optional">4-3. Optional<a class="headerlink" href="#4-3-optional" title="このセクションへのリンク">&para;</a></h1>
 <p>Optionalは、値が存在しない可能性がある場合に使用するコンテナクラスで、NullPointerExceptionを避けるための現代的なアプローチです（Java 8以降）。</p>
-<h2 id="optional">Optionalとは<a class="headerlink" href="#optional" title="Permanent link">&para;</a></h2>
+<h2 id="optional">Optionalとは<a class="headerlink" href="#optional" title="このセクションへのリンク">&para;</a></h2>
 <p><strong>Optional<T></strong> は、値が存在するかどうかを明示的に表現するラッパークラスです。</p>
-<h3 id="_1">従来の問題<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="_1">従来の問題<a class="headerlink" href="#_1" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// nullチェックが必要</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getUserName</span><span class="p">(</span><span class="n">User</span><span class="w"> </span><span class="n">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -2208,7 +2291,7 @@
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">// nullチェックを忘れるとNullPointerException</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">user</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span><span class="w">  </span><span class="c1">// userがnullの場合エラー</span>
 </span></code></pre></div>
-<h3 id="optional_1">Optionalを使った解決<a class="headerlink" href="#optional_1" title="Permanent link">&para;</a></h3>
+<h3 id="optional_1">Optionalを使った解決<a class="headerlink" href="#optional_1" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">public</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getUserName</span><span class="p">(</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">user</span><span class="p">.</span><span class="na">map</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getName</span><span class="p">);</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
@@ -2216,25 +2299,25 @@
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// 安全に値を取得</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getUserName</span><span class="p">(</span><span class="n">optionalUser</span><span class="p">).</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;Unknown&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<h2 id="optional_2">Optionalの作成<a class="headerlink" href="#optional_2" title="Permanent link">&para;</a></h2>
-<h3 id="_2">値がある場合<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="optional_2">Optionalの作成<a class="headerlink" href="#optional_2" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="_2">値がある場合<a class="headerlink" href="#_2" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// nullを渡すとNullPointerException</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Optional&lt;String&gt; bad = Optional.of(null);  // エラー</span>
 </span></code></pre></div>
-<h3 id="_3">値がないかもしれない場合<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">値がないかもしれない場合<a class="headerlink" href="#_3" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">String</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">ofNullable</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">String</span><span class="w"> </span><span class="n">nullValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">ofNullable</span><span class="p">(</span><span class="n">nullValue</span><span class="p">);</span><span class="w">  </span><span class="c1">// 空のOptional</span>
 </span></code></pre></div>
-<h3 id="optional_3">空のOptional<a class="headerlink" href="#optional_3" title="Permanent link">&para;</a></h3>
+<h3 id="optional_3">空のOptional<a class="headerlink" href="#optional_3" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">();</span>
 </span></code></pre></div>
-<h2 id="_4">値の存在確認<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="ispresent-isempty">isPresent / isEmpty<a class="headerlink" href="#ispresent-isempty" title="Permanent link">&para;</a></h3>
+<h2 id="_4">値の存在確認<a class="headerlink" href="#_4" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="ispresent-isempty">isPresent / isEmpty<a class="headerlink" href="#ispresent-isempty" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">// 値が存在するか</span>
@@ -2247,7 +2330,7 @@
 </span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No value&quot;</span><span class="p">);</span>
 </span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="ifpresent">ifPresent<a class="headerlink" href="#ifpresent" title="Permanent link">&para;</a></h3>
+<h3 id="ifpresent">ifPresent<a class="headerlink" href="#ifpresent" title="このセクションへのリンク">&para;</a></h3>
 <p>値が存在する場合のみ処理を実行します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -2259,7 +2342,7 @@
 </span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1">// ifPresentを使用（推奨）</span>
 </span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">optional</span><span class="p">.</span><span class="na">ifPresent</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">::</span><span class="n">println</span><span class="p">);</span>
 </span></code></pre></div>
-<h3 id="ifpresentorelsejava-9">ifPresentOrElse（Java 9以降）<a class="headerlink" href="#ifpresentorelsejava-9" title="Permanent link">&para;</a></h3>
+<h3 id="ifpresentorelsejava-9">ifPresentOrElse（Java 9以降）<a class="headerlink" href="#ifpresentorelsejava-9" title="このセクションへのリンク">&para;</a></h3>
 <p>値が存在する場合と存在しない場合の両方を処理します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
@@ -2268,8 +2351,8 @@
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No value&quot;</span><span class="p">)</span>
 </span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">);</span>
 </span></code></pre></div>
-<h2 id="_5">値の取得<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="get">get()（非推奨）<a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
+<h2 id="_5">値の取得<a class="headerlink" href="#_5" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="get">get()（非推奨）<a class="headerlink" href="#get" title="このセクションへのリンク">&para;</a></h3>
 <p>値を直接取得しますが、値がない場合はNoSuchElementExceptionが発生します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">String</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">get</span><span class="p">();</span><span class="w">  </span><span class="c1">// &quot;Hello&quot;</span>
@@ -2278,7 +2361,7 @@
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1">// String value2 = empty.get();  // NoSuchElementException</span>
 </span></code></pre></div>
 <p><strong>注意</strong>: <code>get()</code> の使用は避け、以下のメソッドを使用してください。</p>
-<h3 id="orelse">orElse<a class="headerlink" href="#orelse" title="Permanent link">&para;</a></h3>
+<h3 id="orelse">orElse<a class="headerlink" href="#orelse" title="このセクションへのリンク">&para;</a></h3>
 <p>値がない場合のデフォルト値を指定します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">String</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;Default&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// &quot;Hello&quot;</span>
@@ -2286,7 +2369,7 @@
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">();</span>
 </span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">String</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">empty</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;Default&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// &quot;Default&quot;</span>
 </span></code></pre></div>
-<h3 id="orelseget">orElseGet<a class="headerlink" href="#orelseget" title="Permanent link">&para;</a></h3>
+<h3 id="orelseget">orElseGet<a class="headerlink" href="#orelseget" title="このセクションへのリンク">&para;</a></h3>
 <p>値がない場合にSupplierを使ってデフォルト値を生成します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">();</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
@@ -2297,7 +2380,7 @@
 </span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="n">String</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">empty</span><span class="p">.</span><span class="na">orElseGet</span><span class="p">(()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">generateDefault</span><span class="p">());</span>
 </span></code></pre></div>
 <p><strong>使い分け</strong>: デフォルト値の生成コストが高い場合は <code>orElseGet</code> を使用</p>
-<h3 id="orelsethrow">orElseThrow<a class="headerlink" href="#orelsethrow" title="Permanent link">&para;</a></h3>
+<h3 id="orelsethrow">orElseThrow<a class="headerlink" href="#orelsethrow" title="このセクションへのリンク">&para;</a></h3>
 <p>値がない場合に例外をスローします。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">();</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
@@ -2309,8 +2392,8 @@
 </span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Value not found&quot;</span><span class="p">)</span>
 </span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="p">);</span>
 </span></code></pre></div>
-<h2 id="_6">値の変換と操作<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<h3 id="map">map<a class="headerlink" href="#map" title="Permanent link">&para;</a></h3>
+<h2 id="_6">値の変換と操作<a class="headerlink" href="#_6" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="map">map<a class="headerlink" href="#map" title="このセクションへのリンク">&para;</a></h3>
 <p>値が存在する場合、変換を適用します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
@@ -2320,7 +2403,7 @@
 </span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">map</span><span class="p">(</span><span class="n">String</span><span class="p">::</span><span class="n">length</span><span class="p">);</span>
 </span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">length</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w">  </span><span class="c1">// 5</span>
 </span></code></pre></div>
-<h3 id="flatmap">flatMap<a class="headerlink" href="#flatmap" title="Permanent link">&para;</a></h3>
+<h3 id="flatmap">flatMap<a class="headerlink" href="#flatmap" title="このセクションへのリンク">&para;</a></h3>
 <p>ネストしたOptionalをフラット化します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">Address</span><span class="o">&gt;</span><span class="w"> </span><span class="n">address</span><span class="p">;</span>
@@ -2348,7 +2431,7 @@
 </span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="w">    </span><span class="p">.</span><span class="na">flatMap</span><span class="p">(</span><span class="n">Person</span><span class="p">::</span><span class="n">getAddress</span><span class="p">)</span>
 </span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="w">    </span><span class="p">.</span><span class="na">map</span><span class="p">(</span><span class="n">Address</span><span class="p">::</span><span class="n">getCity</span><span class="p">);</span>
 </span></code></pre></div>
-<h3 id="filter">filter<a class="headerlink" href="#filter" title="Permanent link">&para;</a></h3>
+<h3 id="filter">filter<a class="headerlink" href="#filter" title="このセクションへのリンク">&para;</a></h3>
 <p>条件に合う値のみを残します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="mi">25</span><span class="p">);</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
@@ -2358,7 +2441,7 @@
 </span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">filtered2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">number</span><span class="p">.</span><span class="na">filter</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 </span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">filtered2</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w">  </span><span class="c1">// 0（条件に合わない）</span>
 </span></code></pre></div>
-<h3 id="orjava-9">or（Java 9以降）<a class="headerlink" href="#orjava-9" title="Permanent link">&para;</a></h3>
+<h3 id="orjava-9">or（Java 9以降）<a class="headerlink" href="#orjava-9" title="このセクションへのリンク">&para;</a></h3>
 <p>値がない場合に別のOptionalを返します。</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">();</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">optional2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Alternative&quot;</span><span class="p">);</span>
@@ -2366,7 +2449,7 @@
 </span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional1</span><span class="p">.</span><span class="na">or</span><span class="p">(()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">optional2</span><span class="p">);</span>
 </span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">));</span><span class="w">  </span><span class="c1">// &quot;Alternative&quot;</span>
 </span></code></pre></div>
-<h2 id="_7">実践例: ユーザー検索<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_7">実践例: ユーザー検索<a class="headerlink" href="#_7" title="このセクションへのリンク">&para;</a></h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">id</span><span class="p">;</span>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
@@ -2424,7 +2507,7 @@
 </span><span id="__span-16-55"><a id="__codelineno-16-55" name="__codelineno-16-55" href="#__codelineno-16-55"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-16-56"><a id="__codelineno-16-56" name="__codelineno-16-56" href="#__codelineno-16-56"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_8">実践例: チェーン処理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_8">実践例: チェーン処理<a class="headerlink" href="#_8" title="このセクションへのリンク">&para;</a></h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">class</span> <span class="nc">Order</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">id</span><span class="p">;</span>
 </span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="n">customer</span><span class="p">;</span>
@@ -2474,8 +2557,8 @@
 </span><span id="__span-17-47"><a id="__codelineno-17-47" name="__codelineno-17-47" href="#__codelineno-17-47"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-17-48"><a id="__codelineno-17-48" name="__codelineno-17-48" href="#__codelineno-17-48"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="optional_4">Optionalのベストプラクティス<a class="headerlink" href="#optional_4" title="Permanent link">&para;</a></h2>
-<h3 id="1-optional">1. 戻り値としてOptionalを使用<a class="headerlink" href="#1-optional" title="Permanent link">&para;</a></h3>
+<h2 id="optional_4">Optionalのベストプラクティス<a class="headerlink" href="#optional_4" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="1-optional">1. 戻り値としてOptionalを使用<a class="headerlink" href="#1-optional" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// 良い例</span>
 </span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kd">public</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">findUser</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Optional</span><span class="p">.</span><span class="na">ofNullable</span><span class="p">(</span><span class="n">users</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">id</span><span class="p">));</span>
@@ -2486,7 +2569,7 @@
 </span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">users</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w">  </span><span class="c1">// nullの可能性</span>
 </span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="2-optional">2. フィールドにOptionalを使わない<a class="headerlink" href="#2-optional" title="Permanent link">&para;</a></h3>
+<h3 id="2-optional">2. フィールドにOptionalを使わない<a class="headerlink" href="#2-optional" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">// 避けるべき</span>
 </span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">email</span><span class="p">;</span><span class="w">  </span><span class="c1">// 推奨されない</span>
@@ -2501,7 +2584,7 @@
 </span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="3-get">3. get()を避ける<a class="headerlink" href="#3-get" title="Permanent link">&para;</a></h3>
+<h3 id="3-get">3. get()を避ける<a class="headerlink" href="#3-get" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1">// 避けるべき</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">optional</span><span class="p">.</span><span class="na">isPresent</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">get</span><span class="p">();</span>
@@ -2516,21 +2599,21 @@
 </span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="c1">// または</span>
 </span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="n">String</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;default&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<h3 id="4-orelse-vs-orelseget">4. orElse vs orElseGet<a class="headerlink" href="#4-orelse-vs-orelseget" title="Permanent link">&para;</a></h3>
+<h3 id="4-orelse-vs-orelseget">4. orElse vs orElseGet<a class="headerlink" href="#4-orelse-vs-orelseget" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">// コストの低いデフォルト値</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">String</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">orElse</span><span class="p">(</span><span class="s">&quot;default&quot;</span><span class="p">);</span>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
 </span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1">// コストの高いデフォルト値</span>
 </span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="n">String</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">optional</span><span class="p">.</span><span class="na">orElseGet</span><span class="p">(()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">expensiveOperation</span><span class="p">());</span>
 </span></code></pre></div>
-<h3 id="5-optional">5. コレクションにはOptionalを使わない<a class="headerlink" href="#5-optional" title="Permanent link">&para;</a></h3>
+<h3 id="5-optional">5. コレクションにはOptionalを使わない<a class="headerlink" href="#5-optional" title="このセクションへのリンク">&para;</a></h3>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1">// 避けるべき</span>
 </span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">Optional</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">optionalList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...;</span>
 </span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
 </span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1">// 良い例（空のリストを返す）</span>
 </span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...;</span><span class="w">  </span><span class="c1">// 空リストか要素があるリスト</span>
 </span></code></pre></div>
-<h2 id="stream-api">Stream APIとの連携<a class="headerlink" href="#stream-api" title="Permanent link">&para;</a></h2>
+<h2 id="stream-api">Stream APIとの連携<a class="headerlink" href="#stream-api" title="このセクションへのリンク">&para;</a></h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">List</span><span class="o">&lt;</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">optionals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span>
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">    </span><span class="n">Optional</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">),</span>
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">    </span><span class="n">Optional</span><span class="p">.</span><span class="na">empty</span><span class="p">(),</span>
@@ -2552,26 +2635,26 @@
 </span><span id="__span-23-19"><a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a><span class="w">    </span><span class="p">.</span><span class="na">map</span><span class="p">(</span><span class="n">Optional</span><span class="p">::</span><span class="n">get</span><span class="p">)</span>
 </span><span id="__span-23-20"><a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="w">    </span><span class="p">.</span><span class="na">collect</span><span class="p">(</span><span class="n">Collectors</span><span class="p">.</span><span class="na">toList</span><span class="p">());</span>
 </span></code></pre></div>
-<h2 id="_9">まとめ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<h3 id="optional_5">Optionalの作成<a class="headerlink" href="#optional_5" title="Permanent link">&para;</a></h3>
+<h2 id="_9">まとめ<a class="headerlink" href="#_9" title="このセクションへのリンク">&para;</a></h2>
+<h3 id="optional_5">Optionalの作成<a class="headerlink" href="#optional_5" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><code>Optional.of(value)</code>: 値がある（nullは不可）</li>
 <li><code>Optional.ofNullable(value)</code>: 値があるかもしれない</li>
 <li><code>Optional.empty()</code>: 空のOptional</li>
 </ul>
-<h3 id="_10">値の取得<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h3 id="_10">値の取得<a class="headerlink" href="#_10" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><code>orElse(default)</code>: デフォルト値</li>
 <li><code>orElseGet(supplier)</code>: デフォルト値を生成</li>
 <li><code>orElseThrow()</code>: 例外をスロー</li>
 </ul>
-<h3 id="_11">値の操作<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h3 id="_11">値の操作<a class="headerlink" href="#_11" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li><code>map(function)</code>: 変換</li>
 <li><code>flatMap(function)</code>: ネストしたOptionalをフラット化</li>
 <li><code>filter(predicate)</code>: 条件フィルタ</li>
 </ul>
-<h3 id="_12">ベストプラクティス<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h3 id="_12">ベストプラクティス<a class="headerlink" href="#_12" title="このセクションへのリンク">&para;</a></h3>
 <ul>
 <li>戻り値としてOptionalを使用</li>
 <li>フィールドには使わない</li>
@@ -2596,6 +2679,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2654,14 +2739,9 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Java Bootcamp
+      Copyright &copy; 2025 Java Bootcamp. このプロジェクトは教育目的で作成されています。
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -2672,10 +2752,7 @@
     
     
     
-      
-      
-    
-    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/nakata5577/java-bootcamp" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -2690,10 +2767,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

@@ -167,12 +167,20 @@ byte b = (byte) bigNumber;  // -126（オーバーフロー）
 int num = 123;
 String str1 = String.valueOf(num);
 String str2 = Integer.toString(num);
-String str3 = "" + num;  // 簡易的な方法
+String str3 = "" + num;  // 簡易的な方法（非推奨、可読性が低い）
 
 // String → プリミティブ
 String str = "456";
 int parsed = Integer.parseInt(str);
 double d = Double.parseDouble("3.14");
+
+// 例外処理を伴う変換（実践的）
+try {
+    String input = "abc";
+    int value = Integer.parseInt(input);
+} catch (NumberFormatException e) {
+    System.out.println("数値に変換できません: " + e.getMessage());
+}
 ```
 
 ## ラッパークラス（Wrapper Classes）

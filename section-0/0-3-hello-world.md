@@ -18,19 +18,24 @@ public class HelloWorld {
 
 1. **`public class HelloWorld`**
    - クラスの定義。Javaではすべてのコードはクラス内に記述される
+   - `public`: このクラスは他のクラスからアクセス可能
    - クラス名とファイル名は一致させる必要がある（`HelloWorld.java`）
+   - **重要**: Javaでは1つのファイルに1つのpublicクラスのみ定義可能
 
 2. **`public static void main(String[] args)`**
    - プログラムのエントリーポイント（開始地点）
-   - `public`: どこからでもアクセス可能
+   - `public`: どこからでもアクセス可能（JVMから呼び出されるため必須）
    - `static`: クラスのインスタンス化なしで呼び出し可能
    - `void`: 戻り値なし
+   - `main`: メソッド名（この名前は固定、変更不可）
    - `String[] args`: コマンドライン引数を受け取る配列
 
 3. **`System.out.println("Hello, World!");`**
    - 標準出力に文字列を出力
-   - `System.out`: 標準出力ストリーム
-   - `println`: 改行付きで文字列を出力
+   - `System`: Javaの標準クラス
+   - `out`: 標準出力ストリーム（Systemクラスのstaticフィールド）
+   - `println`: 改行付きで文字列を出力するメソッド
+   - `print`: 改行なしで出力する場合はこちらを使用
 
 ## コンパイルと実行
 
@@ -173,7 +178,19 @@ java HelloWorld.java
 ```
 
 - 小規模なスクリプトやテストに便利
-- `.class` ファイルは生成されない
+- `.class` ファイルは生成されない（メモリ上で実行）
+- 複数ファイルのプロジェクトには不向き
+- 実行が高速で、学習や簡単なテストに最適
+
+**従来の方法との比較:**
+```bash
+# 従来の方法
+javac HelloWorld.java  # コンパイル
+java HelloWorld        # 実行
+
+# Java 11以降の簡易実行
+java HelloWorld.java   # コンパイル + 実行
+```
 
 ## まとめ
 

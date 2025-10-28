@@ -91,11 +91,17 @@ System.out.println(s1.equals(s3));  // true
 // 数値のラッパークラスも同様
 Integer i1 = 100;
 Integer i2 = 100;
-Integer i3 = new Integer(100);
+Integer i3 = Integer.valueOf(100);
 
-System.out.println(i1 == i2);  // true（キャッシュされたオブジェクト）
-System.out.println(i1 == i3);  // false
+System.out.println(i1 == i2);  // true（キャッシュされたオブジェクト: -128〜127）
+System.out.println(i1 == i3);  // true（キャッシュが使用される）
 System.out.println(i1.equals(i3));  // true
+
+// 大きな数値の場合
+Integer i4 = 1000;
+Integer i5 = 1000;
+System.out.println(i4 == i5);  // false（キャッシュ範囲外）
+System.out.println(i4.equals(i5));  // true
 ```
 
 **ベストプラクティス**: オブジェクトの比較には `.equals()` を使用

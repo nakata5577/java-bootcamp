@@ -1,46 +1,66 @@
 site_name: Java Bootcamp
-site_description: Javaを短期間で集中して学ぶための教科書
+site_description: Javaを短期間で集中して学ぶための実践的な教科書プロジェクト - プログラミング経験者向けの体系的なカリキュラム
 site_author: Java Bootcamp Team
 site_url: https://nakata5577.github.io/java-bootcamp/
 repo_url: https://github.com/nakata5577/java-bootcamp
 repo_name: nakata5577/java-bootcamp
 edit_uri: edit/main/docs/
 
+# コピーライト
+copyright: |
+  Copyright &copy; 2025 <a href="https://github.com/nakata5577/java-bootcamp">Java Bootcamp</a> -
+  このプロジェクトは教育目的で作成されています
+
 theme:
   name: material
   language: ja
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
   palette:
     # Light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: ダークモードに切り替え
     # Dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
         name: ライトモードに切り替え
   features:
+    # ナビゲーション
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
+    - navigation.path
+    # 検索
     - search.suggest
     - search.highlight
     - search.share
+    # コンテンツ
     - content.code.copy
     - content.code.annotate
     - content.action.edit
     - content.action.view
     - content.tabs.link
+    - content.tooltips
+    # TOC
+    - toc.follow
+    - toc.integrate
 
 plugins:
   - search:
@@ -122,6 +142,19 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/nakata5577/java-bootcamp
       name: GitHub Repository
+    - icon: fontawesome/brands/java
+      link: https://www.oracle.com/java/
+      name: Java公式サイト
   generator: false
-
-copyright: Copyright &copy; 2025 Java Bootcamp. このプロジェクトは教育目的で作成されています。
+  analytics:
+    feedback:
+      title: このページは役に立ちましたか？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: このページは役に立ちました
+          data: 1
+          note: フィードバックありがとうございます！
+        - icon: material/thumb-down-outline
+          name: このページは改善が必要です
+          data: 0
+          note: フィードバックありがとうございます。改善に努めます。

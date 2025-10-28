@@ -261,6 +261,51 @@ var x;  // エラー: 初期化が必要
 var y = null;  // エラー: 型が推論できない
 ```
 
+## 練習問題
+
+### 問題1: 温度変換プログラム
+摂氏から華氏に変換するプログラムを作成してください。
+- 公式: F = C × 9/5 + 32
+- `double`型を使用
+
+### 問題2: 円の面積と円周
+半径を入力として、円の面積と円周を計算するプログラムを作成してください。
+- 面積: π × r²
+- 円周: 2 × π × r
+- `Math.PI`を使用
+
+### 問題3: 型変換
+`int`, `double`, `String`の相互変換を練習してください。
+- `"123"` → `int` → `double` → `String`
+
+## よくある落とし穴
+
+### 1. 整数除算の罠
+```java
+int a = 5;
+int b = 2;
+double result = a / b;  // 2.0（期待値: 2.5）
+
+// 正しい方法
+double result = (double) a / b;  // 2.5
+```
+
+### 2. 浮動小数点の誤差
+```java
+double a = 0.1 + 0.2;
+System.out.println(a);  // 0.30000000000000004
+
+// 金融計算にはBigDecimalを使用
+```
+
+### 3. 文字列比較の間違い
+```java
+String s1 = new String("Hello");
+String s2 = new String("Hello");
+System.out.println(s1 == s2);  // false（間違い）
+System.out.println(s1.equals(s2));  // true（正しい）
+```
+
 ## まとめ
 
 - Javaは静的型付け言語
